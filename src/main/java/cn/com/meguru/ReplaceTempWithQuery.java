@@ -8,12 +8,15 @@ package cn.com.meguru;
  */
 public class ReplaceTempWithQuery {
 
-    private int quantity, itemPrivate;
+    private int quantity, itemPrice;
 
     //----------------------------------------------------------------------------------------------
-    //before
-    public double getPrivate() {
-        int basePrivate = quantity * itemPrivate;
+    /**
+     * before
+     * @return
+     */
+    public double getPrice() {
+        int basePrivate = quantity * itemPrice;
         double discountFactor;
         if (basePrivate > 1000) discountFactor = 0.95;
         else discountFactor = 0.98;
@@ -21,17 +24,20 @@ public class ReplaceTempWithQuery {
     }
 
     //----------------------------------------------------------------------------------------------
-    //after
-    public double getPrivateN() {
-        return getBasePrivate() * getDiscountFactor();
+    /**
+     * after
+     * @return
+     */
+    public double getPriceN() {
+        return getBasePrice() * getDiscountFactor();
     }
 
-    private int getBasePrivate() {
-        return quantity * itemPrivate;
+    private int getBasePrice() {
+        return quantity * itemPrice;
     }
 
     private double getDiscountFactor() {
-        if (getBasePrivate() > 1000) return 0.95;
+        if (getBasePrice() > 1000) return 0.95;
         return 0.98;
     }
 
