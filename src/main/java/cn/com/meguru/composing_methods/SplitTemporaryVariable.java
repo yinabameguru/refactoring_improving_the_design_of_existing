@@ -1,4 +1,4 @@
-package cn.com.meguru;
+package cn.com.meguru.composing_methods;
 
 /**
  * 分解临时变量

@@ -1,4 +1,4 @@
-package cn.com.meguru;
+package cn.com.meguru.composing_methods;
 
 /**
  * 以查询取代临时变量

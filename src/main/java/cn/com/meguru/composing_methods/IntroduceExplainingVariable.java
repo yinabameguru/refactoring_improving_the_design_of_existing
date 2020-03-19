@@ -1,4 +1,4 @@
-package cn.com.meguru;
+package cn.com.meguru.composing_methods;
 
 /**
  * 引入解释性变量

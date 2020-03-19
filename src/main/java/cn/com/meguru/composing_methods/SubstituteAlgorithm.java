@@ -1,4 +1,4 @@
-package cn.com.meguru;
+package cn.com.meguru.composing_methods;
 
 /**
  * 替换算法
